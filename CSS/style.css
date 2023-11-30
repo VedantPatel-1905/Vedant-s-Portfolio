@@ -1,0 +1,809 @@
+/* ------- Global styling -------- */
+body
+{
+    margin: 0px;
+}
+
+/* ------- set the text properties-------- */
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Noto Sans', sans-serif;
+}
+p,a,li
+{
+    font-size: 1.2em;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+}
+
+/* ------- Page Styling -------- */
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ------- css for header-------- */
+header
+{
+    z-index: 999;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+}
+
+/* ------- css for website logo-------- */
+header > div
+{
+    height: 100px;
+    margin: 0 20px 0 0 ;
+}
+
+header > div >a > img
+{
+    width: 100%;
+    height: auto;
+    margin: 13px 0 0 20px
+}
+
+/* ------- css for navigation bar and links -------- */
+header > nav
+{
+    margin: 0 15px 0 0;
+}
+header > nav > menu
+{
+    list-style: none;
+    display: flex;
+    
+}
+header > nav > menu > li
+{
+    padding: 0 15px;
+    
+}
+header > nav > menu > li > a
+{
+    color: #efefef;
+}
+
+/* ------- CSS for main body of program-------- */
+.main
+{
+    background-color: #1f1f1f;
+    margin: 25em 0 0 0;
+}
+
+/* ------- css for brief introduction heading -------- */
+section.introPicture
+{
+    background: url('../img/programming_background.jpg') center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30em; 
+    
+}
+section.formPicture
+{
+    background: url('../img/programmer-wallpapers.png') center center/cover;
+}
+section.introduction
+{
+    display: flex;
+    box-sizing: border-box;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    height: 30em; 
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    width: 100%;
+    color: #efefef;
+}
+
+section.introduction > div > h1 
+{
+    font-size: 3.1em;
+}
+section.introduction > div >p 
+{
+    font-size: 1.4em;
+}
+
+section.introduction > div:nth-child(2)
+{
+    width: 70%;
+    text-align: center;
+}
+
+section.introduction > div:last-child > a
+{
+    text-decoration: none;
+    color: #efefef;
+    border: 2px solid #efefef;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #1f1f1f;
+}
+section.introduction > div:last-child > a:hover
+{
+    background-color: #d36446;
+
+}
+/* ------- Css for introduction sectionsection-------- */
+
+section.educationDetail,
+section.projects
+{
+    width: 100%;
+}
+section.projects
+{
+    margin-bottom: 1em;
+}
+
+section.educationDetail > h2,
+section.projects>h2
+{
+    text-align: center;
+    font-size: 2em;
+    color: #efefef;
+}
+
+section.educationDetail > div,
+section.educationDetail > div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+section.projects  h2
+{
+    padding: 12px;
+    text-align: center;
+}
+
+section.projects > div > div:nth-child(2)
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section.projects > div > div:nth-child(2) a
+{
+    text-decoration: none;
+    color: #efefef;
+    height: 20px;
+    cursor: pointer;
+}
+section.projects > div > div:nth-child(2) span
+{
+    background-color: #1f1f1f;
+    display: flex;
+    padding: 20px 10px;
+    border-radius: 3px;
+    margin-bottom: 1em;
+}
+section.projects > div
+{
+    background-color: #efefef;
+    width: 95%;
+    border-radius: 5px;
+    margin: auto;
+}
+div.educationDetail
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0;
+    max-width: 30%;    
+    background-color: #efefef;
+    border-radius: 5px;
+}
+div.educationDetail > div
+{
+    padding: 5px;
+    text-align: center;
+}
+
+div.educationDetail > div > img
+{
+    width: 100%;
+}
+
+div.educationDetail > div > h3 
+{
+    font-size: 1.5em;
+    margin: 0px;
+}
+
+div.educationDetail > div > p 
+{
+    font-size: 19px;
+    margin: 2px ;
+}
+
+/* ------- css for copy button for promocode-------- */
+div.educationDetail > div:last-child
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 10px 0;
+}
+
+
+/* ------- css for introduction sectionng webpage-------- */
+
+div.orderNow
+{
+    
+    display: flex;
+    padding: 10px;
+    color: #efefef;
+    cursor: pointer;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* ------- css for delivery and carry out section-------- */
+div.orderNow >div > button
+{
+    display: block;
+    padding: 25px 50px;
+    font-size: 18px;
+    background-color: #fafafa;
+    color:#ff5a5f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: text-decoration 0.3s;
+}
+div.orderNow >div > button:hover
+{
+    text-decoration: underline;    
+}
+
+div.orderNow >div:nth-child(2),
+div.orderNow >div:nth-child(3)
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 200px;
+}
+
+
+/* ------- css for introduction sectionng form-------- */
+
+/* ------- css for background image and blur-------- */
+.backgroundBlur 
+{
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: none;
+}
+div.orderPizza
+{
+    display: none;
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 70%;
+    margin: 100px 10%;
+    background-color: #fdfdfd;
+    z-index: 101;
+    overflow: auto;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+
+div.orderPizza > div:first-child
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.orderPizza > div:first-child > h2 
+{
+    color: #ff5a5f;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+div.orderPizza > div:first-child > button 
+{
+    background-color: #ff5a5f;
+    color: #efefef;
+    border: none;
+    padding: 8px 16px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+div.orderPizza > div:nth-child(2)
+{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 10px;
+}
+
+div.orderPizza > div:nth-child(2) > form >div > h2
+{
+    background-color: #ff5a5f;
+    color: #efefef;
+    padding: 5px;
+}
+
+div.toppings 
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+div.toppings > div > h3
+{
+    color: #ff5a5f;
+}
+
+.orderPizza > div:nth-child(2) label 
+{
+    display: inline-block;
+    margin: 5px 0px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.orderPizza > div:nth-child(2) > form > div:nth-child(6) > button
+{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ff5a5f;
+    color: #fafafa;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.orderPizza > div:nth-child(2) select, 
+.orderPizza > div:nth-child(2) input[type="radio"],
+.orderPizza > div:nth-child(2) input[type="checkbox"], 
+.orderPizza > div:nth-child(2) input[type="number"], 
+.orderPizza > div:nth-child(2) textarea 
+{
+    margin: 0 0 10px 0;
+}
+  
+  
+.orderPizza > div > form > div > select,
+.orderPizza > div > form > div:nth-child(5)> input
+{
+    background-color: transparent;
+    border: 2px solid #cccccc;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 250px;
+    cursor: pointer;
+}
+  
+.orderPizza > div > form > div > select:hover,
+.orderPizza > div > form > div > select:focus 
+{
+    border-color: #ff5a5f;
+}
+  
+.orderPizza > form > div > select option 
+{
+    background-color: #fff;
+    color: #333333;
+}
+  
+.orderPizza> div > form > div:nth-child(5)
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------- css for add to cart menu-------- */
+.cart 
+{
+    width: 90%;
+    margin: 20px auto;
+    background-color: #fafafa;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.cart h2 
+{
+    text-align: center;
+    color: #ff5a5f;
+}
+  
+#cartItems 
+{
+    list-style-type: none;
+    padding: 0;
+}
+  
+#cartItems li 
+{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+div.cart > div:first-child
+{
+    position: sticky;
+    top: 0;
+    padding: 7px;
+}
+div.cart > div > div > div
+{
+    display: flex;
+    flex-direction: column;
+}
+div.cart > div > h2
+{
+    background-color: #ff5a5f;
+    color: #fff;
+}
+#submitOrderBtn
+{
+    background-color: #ff5a5f;
+    color: #fff;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+#submitOrderBtn:hover 
+{
+    background-color: #e04d51;
+}
+
+/* ------- css to toggle between home delivery and carry out-------- */
+div.cart > div > div> div.delivery,
+span.delivery,
+span.carryOut
+{
+    display: none;
+}
+
+/* ------- css for introduction section------- */
+section.pizzaTypes
+{
+    width: 100%;
+}
+section.pizzaTypes > div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+section.pizzaTypes > div > div:last-child
+{
+    display: none;
+}
+
+div.educationDetail > div:last-child > button:hover
+{
+    background-color: #d36446;
+}
+/* ------- css for footer section of the website-------- */
+footer.footer 
+{
+    width: 100%;
+    background-color: #e8dbdb;
+    color: #1f1f1f;
+    padding: 15px 0 0 0;
+    text-align: center;
+    z-index: 10;
+}
+
+footer.footer > div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+footer.footer > div > div 
+{
+    max-width: 300px;
+}
+footer.footer > div > div > p
+{
+    margin: 8px 0;
+}
+
+footer.footer h3 
+{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer.footer > div:last-child 
+{
+    font-size: 14px;
+}
+
+.footer > div 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer > div > div 
+{
+    flex-basis: 25%;
+}
+
+.footer > div > div h3 
+{
+    font-size: 1.3em;
+    margin:0 0 10px 0;
+}
+
+.footer > div > div:first-child > p 
+{
+    line-height: 28.1px;
+}
+
+.footer > div > div > ul 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+.footer > div > div > ul > li
+{
+    list-style: none;
+}
+.footer > div>div > ul > li > a>img
+{
+    width: 20px;
+    height: auto;
+}
+/* ------- css for bottom section of footer-------- */
+.indexFooterBottom 
+{
+  text-align: center;
+  margin: 20px 0 30px 0;
+}
+
+.indexFooterBottom p 
+{
+  font-size: 12px;
+}
+
+
+/* ------- css for responsive layout of website-------- */
+
+@media only screen and (max-width:1440px) 
+{}
+@media only screen and (max-width: 1280px)  
+{}
+@media only screen and (max-width: 1024px)  
+{
+    /* ------- Header -------- */
+    header.indexHeader > nav > menu > li
+    {
+        padding: 0 7px;
+        font-size: 1.19em;
+    }
+
+    /* ------- introduction section------- */
+    div.orderNow >div > button
+    {
+        padding: 25px 40px;
+    }
+    div.orderNow >div:nth-child(2),
+    div.orderNow >div:nth-child(3)
+    {
+        min-width: 160px;
+    }
+}
+@media only screen and (max-width:769px)  
+{
+    
+    /* ------- introduction section------- */
+    div.orderNow > div:nth-child(1)
+    {
+        width: 100%;
+    }
+    div.orderPizza > div:nth-child(2)
+    {
+        display: block;
+    }
+    div.educationDetail
+    {
+        max-width: 60%;
+    }
+}
+@media only screen and (max-width: 640px) 
+{
+    section.projects > div > div:nth-child(2)
+    {
+        flex-direction: column;
+    }
+    /* ------- Header -------- */
+    header > nav > menu 
+    {
+        display: none;
+    }
+    
+    /* ------- introduction section -------- */
+    div.educationDetail
+    {
+        max-width: 90%;
+    }
+    div.educationDetail:nth-child(4) > div > img 
+    {
+        width: 67%;
+    }
+    
+    /* ------- introduction section------- */
+    section.introduction > div > h1 
+    {
+        font-size: 2.2em;
+    }
+    section.introduction > div >p 
+    {
+        font-size: 1em;
+    }
+    
+    section.pizzaTypes > div > div:last-child
+    {
+        display: flex;
+    }
+    div.educationDetail > div > img 
+    {
+        width: 56%;
+    }
+    
+    .footer > div >div
+    {
+        flex-basis: 50%;
+    }
+}
+@media only screen and (max-width: 446px) 
+{
+    section.introPicture, 
+    section.introduction
+    {
+        height: 36em;
+    }
+    .main
+    {
+        margin: 36em 0 0 0;
+    }
+    /* ------- introduction section -------- */
+    section.introduction > div > h1 
+    {
+        font-size: 2.2em;
+    }
+    section.introduction > div >p 
+    {
+        font-size: 1em;
+    }
+
+    /* ------- Header -------- */
+    header > div >a > img 
+    {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 376px) 
+{
+    /* ------- introduction section -------- */
+    section.introduction > div > h1 
+    {
+        font-size: 2em;
+    }
+
+    div.educationDetail
+    {
+        max-width: 90%;
+    }
+
+    /* ------- introduction section------- */
+    div.orderNow >div > button
+    {
+        padding: 25px 30px;
+    }
+    div.orderNow >div:nth-child(2),
+    div.orderNow >div:nth-child(3)
+    {
+        min-width: 100px;
+    }
+
+    .footer > div >div
+    {
+        flex-basis: 60%;
+    }
+}
+@media only screen and (max-width: 320px) 
+{
+    /* ------- Header -------- */
+    header > div >a > img
+    {
+        margin: 13px 0 auto;
+    }
+    header > div >a > img 
+    {
+        width: 80%;
+    }
+
+    /* ------- introduction section------- */
+    div.orderPizza
+    {
+        width: 75%;
+        margin: 100px 10%;
+    }
+    div.orderPizza > div:nth-child(2) > form >div > h2 
+    {
+        font-size: 1.2em;
+    }
+    div.toppings > div > h3
+    {
+        font-size: 1em;
+    }
+    .orderPizza > div:nth-child(2) label
+    {
+        font-size: 0.8em;
+    }
+
+    section.introduction > div > h1 
+    {
+        font-size: 1.7em;
+    }
+    section.introduction > div:nth-child(2) 
+    {
+        width: 90%;
+    }
+    
+    div.orderNow >div > button
+    {
+        padding: 15px 15px;
+    }
+}
+
+
+
+
